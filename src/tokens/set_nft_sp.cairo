@@ -1,4 +1,4 @@
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod set_nft_sp {
     use briq_protocol::erc::erc721::models::{
         ERC721OperatorApproval, ERC721Owner, ERC721Balance, ERC721TokenApproval
@@ -328,12 +328,12 @@ mod set_nft_sp {
         }
 
         fn emit_event<
-            S, impl IntoImp: traits::Into<S, Event>, impl SDrop: Drop<S>, impl SCopy: Copy<S>
+            S, impl IntoImp: traits::Into<S, Event>, impl SDrop: Drop<S>, impl SClone: Clone<S>, impl SEv: starknet::event::Event::<S>
         >(
             ref self: ContractState, event: S
         ) {
-            self.emit(event);
-            emit!(self.world(), event);
+            self.emit(event.clone());
+            emit!(self.world(), (event,));
         }
     }
 

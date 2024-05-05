@@ -1,4 +1,4 @@
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod box_nft_sp {
     use briq_protocol::erc::erc1155::models::{
         ERC1155OperatorApproval, ERC1155Balance
@@ -286,12 +286,12 @@ mod box_nft_sp {
         }
 
         fn emit_event<
-            S, impl IntoImp: traits::Into<S, Event>, impl SDrop: Drop<S>, impl SClone: Clone<S>
+            S, impl IntoImp: traits::Into<S, Event>, impl SDrop: Drop<S>, impl SClone: Clone<S>, impl SEv: starknet::event::Event::<S>
         >(
             ref self: ContractState, event: S
         ) {
             self.emit(event.clone());
-            emit!(self.world(), event);
+            emit!(self.world(), (event,));
         }
     }
 

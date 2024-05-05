@@ -4,7 +4,7 @@ trait LegacyBriqBalance<T> {
     fn transferFT_(ref self: T, sender: felt252, recipient: felt252, material: felt252, qty: felt252);
 }
 
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod migrate_assets {
     use starknet::{ContractAddress, get_caller_address, get_contract_address};
     use starknet::info::get_tx_info;

@@ -84,7 +84,7 @@ fn is_allowed_to_mint(
     get!(world, (attribute_group_id, caller), ShapeValidatorAdmin).is_admin
 }
 
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod register_shape_validator {
     use starknet::{ClassHash, get_caller_address, ContractAddress};
     use briq_protocol::world_config::{WorldConfig, AdminTrait};

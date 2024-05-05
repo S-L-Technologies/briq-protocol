@@ -3,17 +3,16 @@ mod constants;
 
 use starknet::ContractAddress;
 
-#[starknet::interface]
-trait IBriqFactory<ContractState> {
-    fn initialize(ref self: ContractState, t: felt252, surge_t: felt252, buy_token: ContractAddress);
+#[dojo::interface]
+trait IBriqFactory {
+    fn initialize(t: felt252, surge_t: felt252, buy_token: ContractAddress);
     fn buy(
-        ref self: ContractState,
         material: u64,
         amount_u32: u32
     );
 }
 
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod briq_factory {
     use starknet::{get_caller_address, ContractAddress, ClassHash};
     use starknet::get_block_timestamp;
@@ -51,8 +50,7 @@ mod briq_factory {
 
     #[external(v0)]
     impl BriqFactory of super::IBriqFactory<ContractState> {
-        fn initialize(ref self: ContractState, t: felt252, surge_t: felt252, buy_token: ContractAddress) {
-            let world = self.world_dispatcher.read();
+        fn initialize(self: @ContractState, world: IWorldDispatcher, t: felt252, surge_t: felt252, buy_token: ContractAddress) {
             world.only_admins(@get_caller_address());
 
             let mut briq_factory = BriqFactoryTrait::get_briq_factory(world);
@@ -66,12 +64,11 @@ mod briq_factory {
         }
 
         fn buy(
-            ref self: ContractState,
+            self: @ContractState,
+            world: IWorldDispatcher,
             material: u64,
             amount_u32: u32
         ) {
-            let world = self.world_dispatcher.read();
-
             let amount: felt252 = amount_u32.into();
             assert(amount >= MIN_PURCHASE(), 'amount too low !');
 

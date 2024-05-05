@@ -143,7 +143,7 @@ trait IAttributeGroups<ContractState> {
     );
 }
 
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod attribute_groups {
     use starknet::ContractAddress;
     use starknet::get_caller_address;

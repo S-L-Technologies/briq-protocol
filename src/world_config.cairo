@@ -92,7 +92,7 @@ trait ISetupWorld<ContractState> {
     );
 }
 
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod setup_world {
     use starknet::ContractAddress;
     use starknet::get_caller_address;

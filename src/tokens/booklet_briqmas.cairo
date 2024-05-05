@@ -1,4 +1,4 @@
-#[dojo::contract]
+#[dojo::contract(allow_ref_self)]
 mod booklet_briqmas {
     use briq_protocol::erc::erc1155::models::{
         ERC1155OperatorApproval, ERC1155Balance
@@ -109,39 +109,39 @@ mod booklet_briqmas {
         }
     }
 
-    //#[external(v0)]
-    //impl BookletAttribute = briq_protocol::booklet::attribute::BookletAttributeHolder<ContractState>;
-    // Until the above is feasible, the following workaround is needed:
-    mod tempfix2 {
-        use briq_protocol::booklet::attribute::BookletAttributeHolder;
-    }
-    use briq_protocol::types::{PackedShapeItem, FTSpec};
     #[external(v0)]
-    impl tempFix of briq_protocol::attributes::attributes::IAttributeHandler<ContractState> {
-        fn assign(
-            ref self: ContractState,
-            world: IWorldDispatcher,
-            set_owner: ContractAddress,
-            set_token_id: felt252,
-            attribute_group_id: u64,
-            attribute_id: u64,
-            shape: Array<PackedShapeItem>,
-            fts: Array<FTSpec>,
-        ) {
-            tempfix2::BookletAttributeHolder::assign(ref self, world, set_owner, set_token_id, attribute_group_id, attribute_id, shape, fts)
-        }
+    impl BookletAttribute = briq_protocol::booklet::attribute::BookletAttributeHolder<ContractState>;
+    // Until the above is feasible, the following workaround is needed:
+    // mod tempfix2 {
+    //     use briq_protocol::booklet::attribute::BookletAttributeHolder;
+    // }
+    // use briq_protocol::types::{PackedShapeItem, FTSpec};
+    // #[external(v0)]
+    // impl tempFix of briq_protocol::attributes::attributes::IAttributeHandler<ContractState> {
+    //     fn assign(
+    //         ref self: ContractState,
+    //         world: IWorldDispatcher,
+    //         set_owner: ContractAddress,
+    //         set_token_id: felt252,
+    //         attribute_group_id: u64,
+    //         attribute_id: u64,
+    //         shape: Array<PackedShapeItem>,
+    //         fts: Array<FTSpec>,
+    //     ) {
+    //         tempfix2::BookletAttributeHolder::assign(ref self, world, set_owner, set_token_id, attribute_group_id, attribute_id, shape, fts)
+    //     }
 
-        fn remove(
-            ref self: ContractState,
-            world: IWorldDispatcher,
-            set_owner: ContractAddress,
-            set_token_id: felt252,
-            attribute_group_id: u64,
-            attribute_id: u64
-        ) {
-            tempfix2::BookletAttributeHolder::remove(ref self, world, set_owner, set_token_id, attribute_group_id, attribute_id)
-        }
-    }
+    //     fn remove(
+    //         ref self: ContractState,
+    //         world: IWorldDispatcher,
+    //         set_owner: ContractAddress,
+    //         set_token_id: felt252,
+    //         attribute_group_id: u64,
+    //         attribute_id: u64
+    //     ) {
+    //         tempfix2::BookletAttributeHolder::remove(ref self, world, set_owner, set_token_id, attribute_group_id, attribute_id)
+    //     }
+    // }
 
     use briq_protocol::world_config::{get_world_config, AdminTrait};
     use briq_protocol::booklet::attribute::is_allowed_to_mint;
@@ -316,12 +316,12 @@ mod booklet_briqmas {
         }
 
         fn emit_event<
-            S, impl IntoImp: traits::Into<S, Event>, impl SDrop: Drop<S>, impl SClone: Clone<S>
+            S, impl IntoImp: traits::Into<S, Event>, impl SDrop: Drop<S>, impl SClone: Clone<S>, impl SEv: starknet::event::Event::<S>
         >(
             ref self: ContractState, event: S
         ) {
             self.emit(event.clone());
-            emit!(self.world(), event);
+            emit!(self.world(), (event,));
         }
     }
 
