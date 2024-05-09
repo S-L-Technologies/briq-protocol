@@ -17,10 +17,16 @@ __pycache__/
 
 !pyproject.toml
 
+!manifests
+manifests/*
+!manifests/sepolia
+
 !Scarb.toml
 !src
 !src-old
 !tests-old
+
+!scripts-old
 
 !scripts/
 scripts/*
@@ -28,4 +34,5 @@ scripts/*
 !scripts/setup_katana.sh
 !scripts/katana_account.json
 !scripts/katana_signer.json
-!scripts-old
+
+!scripts/sepolia_contracts.sh

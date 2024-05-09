@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x2847546900803c74a3c030c286b5dc98f3395e61f373681773fac77098c3393"
+original_class_hash = "0x2847546900803c74a3c030c286b5dc98f3395e61f373681773fac77098c3393"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_attributes_attribute_group_attribute_group.json"
+name = "briq_protocol::attributes::attribute_group::attribute_group"
+
+[[members]]
+name = "attribute_group_id"
+type = "u64"
+key = true
+
+[[members]]
+name = "owner"
+type = "AttributeGroupOwner"
+key = false
+
+[[members]]
+name = "target_set_contract_address"
+type = "ContractAddress"
+key = false

@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x5c58dc1a1f573f39489d1b594cb788d1c2434e3557418f425b758cbecc287bc"
+original_class_hash = "0x5c58dc1a1f573f39489d1b594cb788d1c2434e3557418f425b758cbecc287bc"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_erc_erc721_models_erc_721_owner.json"
+name = "briq_protocol::erc::erc721::models::erc_721_owner"
+
+[[members]]
+name = "token"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "token_id"
+type = "felt252"
+key = true
+
+[[members]]
+name = "address"
+type = "ContractAddress"
+key = false

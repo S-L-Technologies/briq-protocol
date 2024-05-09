@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x7c9e1a3212052ed0d53b4ef1845be9b6d44fe672bb9375ac8cec6acfbd2ccfc"
+original_class_hash = "0x7c9e1a3212052ed0d53b4ef1845be9b6d44fe672bb9375ac8cec6acfbd2ccfc"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_briq_factory_briq_factory.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::briq_factory::briq_factory"

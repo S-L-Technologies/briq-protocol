@@ -1,0 +1,231 @@
+[
+  {
+    "type": "impl",
+    "name": "DojoResourceProviderImpl",
+    "interface_name": "dojo::world::IDojoResourceProvider"
+  },
+  {
+    "type": "interface",
+    "name": "dojo::world::IDojoResourceProvider",
+    "items": [
+      {
+        "type": "function",
+        "name": "dojo_resource",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "core::felt252"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "type": "impl",
+    "name": "WorldProviderImpl",
+    "interface_name": "dojo::world::IWorldProvider"
+  },
+  {
+    "type": "struct",
+    "name": "dojo::world::IWorldDispatcher",
+    "members": [
+      {
+        "name": "contract_address",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ]
+  },
+  {
+    "type": "interface",
+    "name": "dojo::world::IWorldProvider",
+    "items": [
+      {
+        "type": "function",
+        "name": "world",
+        "inputs": [],
+        "outputs": [
+          {
+            "type": "dojo::world::IWorldDispatcher"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "type": "impl",
+    "name": "UpgradableImpl",
+    "interface_name": "dojo::components::upgradeable::IUpgradeable"
+  },
+  {
+    "type": "interface",
+    "name": "dojo::components::upgradeable::IUpgradeable",
+    "items": [
+      {
+        "type": "function",
+        "name": "upgrade",
+        "inputs": [
+          {
+            "name": "new_class_hash",
+            "type": "core::starknet::class_hash::ClassHash"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "briq_protocol::attributes::attribute_group::AttributeGroupOwner",
+    "variants": [
+      {
+        "name": "Admin",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "name": "Contract",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "create_attribute_group",
+    "inputs": [
+      {
+        "name": "world",
+        "type": "dojo::world::IWorldDispatcher"
+      },
+      {
+        "name": "attribute_group_id",
+        "type": "core::integer::u64"
+      },
+      {
+        "name": "owner",
+        "type": "briq_protocol::attributes::attribute_group::AttributeGroupOwner"
+      },
+      {
+        "name": "target_set_contract_address",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ],
+    "outputs": [],
+    "state_mutability": "external"
+  },
+  {
+    "type": "function",
+    "name": "update_attribute_group",
+    "inputs": [
+      {
+        "name": "world",
+        "type": "dojo::world::IWorldDispatcher"
+      },
+      {
+        "name": "attribute_group_id",
+        "type": "core::integer::u64"
+      },
+      {
+        "name": "owner",
+        "type": "briq_protocol::attributes::attribute_group::AttributeGroupOwner"
+      },
+      {
+        "name": "target_set_contract_address",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ],
+    "outputs": [],
+    "state_mutability": "external"
+  },
+  {
+    "type": "event",
+    "name": "dojo::components::upgradeable::upgradeable::Upgraded",
+    "kind": "struct",
+    "members": [
+      {
+        "name": "class_hash",
+        "type": "core::starknet::class_hash::ClassHash",
+        "kind": "data"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "dojo::components::upgradeable::upgradeable::Event",
+    "kind": "enum",
+    "variants": [
+      {
+        "name": "Upgraded",
+        "type": "dojo::components::upgradeable::upgradeable::Upgraded",
+        "kind": "nested"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "briq_protocol::attributes::attribute_group::attribute_groups::AttributeGroupCreated",
+    "kind": "struct",
+    "members": [
+      {
+        "name": "attribute_group_id",
+        "type": "core::integer::u64",
+        "kind": "data"
+      },
+      {
+        "name": "owner_admin",
+        "type": "core::starknet::contract_address::ContractAddress",
+        "kind": "data"
+      },
+      {
+        "name": "owner_contract",
+        "type": "core::starknet::contract_address::ContractAddress",
+        "kind": "data"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "briq_protocol::attributes::attribute_group::attribute_groups::AttributeGroupUpdated",
+    "kind": "struct",
+    "members": [
+      {
+        "name": "attribute_group_id",
+        "type": "core::integer::u64",
+        "kind": "data"
+      },
+      {
+        "name": "owner_admin",
+        "type": "core::starknet::contract_address::ContractAddress",
+        "kind": "data"
+      },
+      {
+        "name": "owner_contract",
+        "type": "core::starknet::contract_address::ContractAddress",
+        "kind": "data"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "briq_protocol::attributes::attribute_group::attribute_groups::Event",
+    "kind": "enum",
+    "variants": [
+      {
+        "name": "UpgradeableEvent",
+        "type": "dojo::components::upgradeable::upgradeable::Event",
+        "kind": "nested"
+      },
+      {
+        "name": "AttributeGroupCreated",
+        "type": "briq_protocol::attributes::attribute_group::attribute_groups::AttributeGroupCreated",
+        "kind": "nested"
+      },
+      {
+        "name": "AttributeGroupUpdated",
+        "type": "briq_protocol::attributes::attribute_group::attribute_groups::AttributeGroupUpdated",
+        "kind": "nested"
+      }
+    ]
+  }
+]

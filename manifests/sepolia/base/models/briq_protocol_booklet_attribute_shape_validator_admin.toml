@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x68acfc317406f16584d351fa1884bdc35067faabc6cef795d1fe2234019a3b6"
+original_class_hash = "0x68acfc317406f16584d351fa1884bdc35067faabc6cef795d1fe2234019a3b6"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_booklet_attribute_shape_validator_admin.json"
+name = "briq_protocol::booklet::attribute::shape_validator_admin"
+
+[[members]]
+name = "attribute_group_id"
+type = "u64"
+key = true
+
+[[members]]
+name = "owner"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "is_admin"
+type = "bool"
+key = false

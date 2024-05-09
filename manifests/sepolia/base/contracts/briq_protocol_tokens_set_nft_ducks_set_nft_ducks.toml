@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x4a5a8386c53a5e9a77704ccd50c491210a796796562e074033721d16ef58d8c"
+original_class_hash = "0x4a5a8386c53a5e9a77704ccd50c491210a796796562e074033721d16ef58d8c"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_tokens_set_nft_ducks_set_nft_ducks.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft_ducks::set_nft_ducks"

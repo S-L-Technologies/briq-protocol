@@ -1,0 +1,484 @@
+[world]
+kind = "WorldContract"
+class_hash = "0x799bc4e9da10bfb3dd88e6f223c9cfbf7745435cd14f5d69675ea448e578cd"
+original_class_hash = "0x799bc4e9da10bfb3dd88e6f223c9cfbf7745435cd14f5d69675ea448e578cd"
+abi = "manifests/sepolia/abis/deployments/dojo_world_world.json"
+address = "0x1cf3f63efa8ccb10fab0e9b3a1a72b69071005978b6977150eb1221235892d3"
+seed = "briq_protocol"
+name = "dojo::world::world"
+
+[world.metadata]
+profile_name = "sepolia"
+rpc_url = "https://rpc.nethermind.io/sepolia-juno/v0_6?apikey=5TJmOvkqo04sDbpZ69swletnZSuEjOkAl9aZbxWkh6bhhoiD"
+
+[base]
+kind = "Class"
+class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+original_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+name = "dojo::base::base"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x3939c876e6497d2af4948ea2e2b70ea143ba4d7e71b1254f5b1582c1fcf2751"
+class_hash = "0x787240711774161c9c176bd014ae18ea661a7a50a705473e8f8f5c93da3788b"
+original_class_hash = "0x787240711774161c9c176bd014ae18ea661a7a50a705473e8f8f5c93da3788b"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_attributes_attribute_group_attribute_groups.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::attributes::attribute_group::attribute_groups"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x412497d1bf0dfefdca362494c58f287e495a07249783e29775ce3020e275f6f"
+class_hash = "0x705fc5d2f0dcfe5d3c658e9cbc66d52e225ae8dcd9aad3a1c44712dbd0b66ba"
+original_class_hash = "0x705fc5d2f0dcfe5d3c658e9cbc66d52e225ae8dcd9aad3a1c44712dbd0b66ba"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_booklet_attribute_register_shape_validator.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::booklet::attribute::register_shape_validator"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x7679e15068cc0d308ff270d340862d52362b1d0f9833f14d829d8e7f39d366f"
+class_hash = "0x7c9e1a3212052ed0d53b4ef1845be9b6d44fe672bb9375ac8cec6acfbd2ccfc"
+original_class_hash = "0x7c9e1a3212052ed0d53b4ef1845be9b6d44fe672bb9375ac8cec6acfbd2ccfc"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_briq_factory_briq_factory.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::briq_factory::briq_factory"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x901e1c2a6596d3f3992c3617aa2da2017f3d980ccd4cdea0e45854452107b4"
+class_hash = "0x5483908098fc731d5384bc05c496683063e620fe181650789dac7aef9666854"
+original_class_hash = "0x5483908098fc731d5384bc05c496683063e620fe181650789dac7aef9666854"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_migrate_migrate_assets.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::migrate::migrate_assets"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x6b05f3548418c462262d6e4b9ec9f2835b4b8aacc0736e5c3cd152abb811fe6"
+class_hash = "0xb706c817e092522aca202ca1332efb068b3ce124824ec6055a5e5b6974761"
+original_class_hash = "0xb706c817e092522aca202ca1332efb068b3ce124824ec6055a5e5b6974761"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_booklet_briqmas_booklet_briqmas.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::booklet_briqmas::booklet_briqmas"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x161f7d29180fbce59ed7e73edd1a2ea3268c9aff22335cbbd856bfbcf84445d"
+class_hash = "0x2f18cc54e235f5249ca0aee7a37fb94e7fe9c6ce0ff4323b9c8e398199c30c7"
+original_class_hash = "0x2f18cc54e235f5249ca0aee7a37fb94e7fe9c6ce0ff4323b9c8e398199c30c7"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_booklet_ducks_booklet_ducks.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::booklet_ducks::booklet_ducks"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x3d3fdccf11997bb97b75d5f1818318f9648043bb4dba7b82a78ed57d67d9eac"
+class_hash = "0x54682377e62d80df664d8eb6de878015dfc50630311f9afb41ab06f6aa13360"
+original_class_hash = "0x54682377e62d80df664d8eb6de878015dfc50630311f9afb41ab06f6aa13360"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_booklet_ducks_frens_booklet_ducks_frens.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::booklet_ducks_frens::booklet_ducks_frens"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x32b0abe087c2e30c34b64944250dafcabf7642f3a82cff9ea52fd6f86aa212c"
+class_hash = "0x3488ae9232354c82b06429f9d72989e3ad4efb15c9de68d063d7b16775223c"
+original_class_hash = "0x3488ae9232354c82b06429f9d72989e3ad4efb15c9de68d063d7b16775223c"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_booklet_starknet_planet_booklet_starknet_planet.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::booklet_starknet_planet::booklet_starknet_planet"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x222e344352c9b757c002a83ce87484284a50924fb3014040740bc6e171242a0"
+class_hash = "0x5365ad9429217b0d8d1739718a2e0c051702a3c702291deedda8520d8dad877"
+original_class_hash = "0x5365ad9429217b0d8d1739718a2e0c051702a3c702291deedda8520d8dad877"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_box_nft_briqmas_box_nft_briqmas.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::box_nft_briqmas::box_nft_briqmas"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x32ccbf4f8832f75e4484602d624ba2d43780f480cb6c3ca6c4cb9ead398a0fd"
+class_hash = "0x59d6e2a39b8e932db781d1c8d8240fe083206b64e1c99f9f2e7d91a4315988d"
+original_class_hash = "0x59d6e2a39b8e932db781d1c8d8240fe083206b64e1c99f9f2e7d91a4315988d"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_box_nft_sp_box_nft_sp.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::box_nft_sp::box_nft_sp"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x78af24bd385d041ad87df067908dc6710baac4c7eed5e1cb3bc0ca28a7e1d1d"
+class_hash = "0x38c4e7aa990630175bdf1acbace0416e39eb17cec50d911073cb2b52ef61810"
+original_class_hash = "0x38c4e7aa990630175bdf1acbace0416e39eb17cec50d911073cb2b52ef61810"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_briq_token_briq_token.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::briq_token::briq_token"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x12555f235252050fa12d49393b7975afb91746fc80318ab3511b8577c8dfb97"
+class_hash = "0x708b7e407402e772ea463056139e571cc99a21933342b9617882812d0d8a9d8"
+original_class_hash = "0x708b7e407402e772ea463056139e571cc99a21933342b9617882812d0d8a9d8"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_set_nft_1155_ducks_frens_set_nft_1155_ducks_frens.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft_1155_ducks_frens::set_nft_1155_ducks_frens"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x695f67f607c255194c29eaa584a9098636f961708cdaf4f1a1707d7c431dc7f"
+class_hash = "0x202803838fd6a6ad5618fe9a655346b47a6765301807ed50553a23549a1f3c9"
+original_class_hash = "0x202803838fd6a6ad5618fe9a655346b47a6765301807ed50553a23549a1f3c9"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_set_nft_briqmas_set_nft_briqmas.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft_briqmas::set_nft_briqmas"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x611ed988cd95e6c59f31b5fafd1fcd2194b77bf8421c44112a280f6bbe4f943"
+class_hash = "0x4a5a8386c53a5e9a77704ccd50c491210a796796562e074033721d16ef58d8c"
+original_class_hash = "0x4a5a8386c53a5e9a77704ccd50c491210a796796562e074033721d16ef58d8c"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_set_nft_ducks_set_nft_ducks.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft_ducks::set_nft_ducks"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x515428b8c0b1524f370d298998bb0c8681f745dbb7ebcb57934f5575beb5252"
+class_hash = "0x401751a33efc58d20145ede5d9d0cb63fde9cf989b5e7106894bb1129527d67"
+original_class_hash = "0x401751a33efc58d20145ede5d9d0cb63fde9cf989b5e7106894bb1129527d67"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_set_nft_set_nft.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft::set_nft"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x67e94f5fb9bf932e0d1ca38c4fadd4734b549ae7332eae93ab81646c3261c7b"
+class_hash = "0x4bc7728d4aea77dfab05c1a483b6d9c7d2779f1da24f6733afd8c7c66d847a2"
+original_class_hash = "0x4bc7728d4aea77dfab05c1a483b6d9c7d2779f1da24f6733afd8c7c66d847a2"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_tokens_set_nft_sp_set_nft_sp.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft_sp::set_nft_sp"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x2f9f1470f9a07b39a44ffc45358bbecaa01c589e8430ea6fa351c9b3057221"
+class_hash = "0xe360127ada4af73744590183ac661d4876fb9ab444a88669dd0e90bea2e4eb"
+original_class_hash = "0xe360127ada4af73744590183ac661d4876fb9ab444a88669dd0e90bea2e4eb"
+base_class_hash = "0x679177a2cb757694ac4f326d01052ff0963eac0bc2a17116a2b87badcdf6f76"
+abi = "manifests/sepolia/abis/deployments/contracts/briq_protocol_world_config_setup_world.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::world_config::setup_world"
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x2847546900803c74a3c030c286b5dc98f3395e61f373681773fac77098c3393"
+original_class_hash = "0x2847546900803c74a3c030c286b5dc98f3395e61f373681773fac77098c3393"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_attributes_attribute_group_attribute_group.json"
+name = "briq_protocol::attributes::attribute_group::attribute_group"
+
+[[models.members]]
+name = "attribute_group_id"
+type = "u64"
+key = true
+
+[[models.members]]
+name = "owner"
+type = "AttributeGroupOwner"
+key = false
+
+[[models.members]]
+name = "target_set_contract_address"
+type = "ContractAddress"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x39a1595f67bc5409e94cc0b21a1c6969af59190e5ad9b9d1901c47e23e0f4d"
+original_class_hash = "0x39a1595f67bc5409e94cc0b21a1c6969af59190e5ad9b9d1901c47e23e0f4d"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_booklet_attribute_shape_validator.json"
+name = "briq_protocol::booklet::attribute::shape_validator"
+
+[[models.members]]
+name = "attribute_group_id"
+type = "u64"
+key = true
+
+[[models.members]]
+name = "attribute_id"
+type = "u64"
+key = true
+
+[[models.members]]
+name = "class_hash"
+type = "ClassHash"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x68acfc317406f16584d351fa1884bdc35067faabc6cef795d1fe2234019a3b6"
+original_class_hash = "0x68acfc317406f16584d351fa1884bdc35067faabc6cef795d1fe2234019a3b6"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_booklet_attribute_shape_validator_admin.json"
+name = "briq_protocol::booklet::attribute::shape_validator_admin"
+
+[[models.members]]
+name = "attribute_group_id"
+type = "u64"
+key = true
+
+[[models.members]]
+name = "owner"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "is_admin"
+type = "bool"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x7e03987449b7dc2b51180cc598cf4b9bad1434ef7eb513ceeb270080d6ce8f1"
+original_class_hash = "0x7e03987449b7dc2b51180cc598cf4b9bad1434ef7eb513ceeb270080d6ce8f1"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_briq_factory_models_briq_factory_store.json"
+name = "briq_protocol::briq_factory::models::briq_factory_store"
+
+[[models.members]]
+name = "store_id"
+type = "u64"
+key = true
+
+[[models.members]]
+name = "buy_token"
+type = "ContractAddress"
+key = false
+
+[[models.members]]
+name = "last_stored_t"
+type = "felt252"
+key = false
+
+[[models.members]]
+name = "surge_t"
+type = "felt252"
+key = false
+
+[[models.members]]
+name = "last_purchase_time"
+type = "u64"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x5d6dde2277286a99efcc88e2c601514aa17beb9d1b8791463c3f1408455ec9d"
+original_class_hash = "0x5d6dde2277286a99efcc88e2c601514aa17beb9d1b8791463c3f1408455ec9d"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_erc_erc1155_models_erc_1155_balance.json"
+name = "briq_protocol::erc::erc1155::models::erc_1155_balance"
+
+[[models.members]]
+name = "token"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "account"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "id"
+type = "felt252"
+key = true
+
+[[models.members]]
+name = "amount"
+type = "u128"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x27efdfea8f2166bd254240cde5d295bf35175879c2b51af696cb9d3e5fdfd01"
+original_class_hash = "0x27efdfea8f2166bd254240cde5d295bf35175879c2b51af696cb9d3e5fdfd01"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_erc_erc721_models_erc_721_balance.json"
+name = "briq_protocol::erc::erc721::models::erc_721_balance"
+
+[[models.members]]
+name = "token"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "account"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "amount"
+type = "u128"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x5c58dc1a1f573f39489d1b594cb788d1c2434e3557418f425b758cbecc287bc"
+original_class_hash = "0x5c58dc1a1f573f39489d1b594cb788d1c2434e3557418f425b758cbecc287bc"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_erc_erc721_models_erc_721_owner.json"
+name = "briq_protocol::erc::erc721::models::erc_721_owner"
+
+[[models.members]]
+name = "token"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "token_id"
+type = "felt252"
+key = true
+
+[[models.members]]
+name = "address"
+type = "ContractAddress"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x1508b6486d1d031fdb3837d18d81e15c17758bed001a20226e1dad4cf41a6f6"
+original_class_hash = "0x1508b6486d1d031fdb3837d18d81e15c17758bed001a20226e1dad4cf41a6f6"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_erc_erc721_models_erc_721_token_approval.json"
+name = "briq_protocol::erc::erc721::models::erc_721_token_approval"
+
+[[models.members]]
+name = "token"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "token_id"
+type = "felt252"
+key = true
+
+[[models.members]]
+name = "address"
+type = "ContractAddress"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x3cb1883ecf9a85dc6bb9d7b55723bbd34fb6ec91dabe8657ccc35432b0adb0a"
+original_class_hash = "0x3cb1883ecf9a85dc6bb9d7b55723bbd34fb6ec91dabe8657ccc35432b0adb0a"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_world_config_box_contracts.json"
+name = "briq_protocol::world_config::box_contracts"
+
+[[models.members]]
+name = "contract"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "is_active"
+type = "bool"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x5a86d01c1b0173cffe9465bf2d036eff616d8060d6843895aa84be330baf825"
+original_class_hash = "0x5a86d01c1b0173cffe9465bf2d036eff616d8060d6843895aa84be330baf825"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_world_config_set_contracts.json"
+name = "briq_protocol::world_config::set_contracts"
+
+[[models.members]]
+name = "contract"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "is_active"
+type = "bool"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x5a18add034770b12f7f3466fd9d464456b134ac9d427de5e8d1549faea8bd08"
+original_class_hash = "0x5a18add034770b12f7f3466fd9d464456b134ac9d427de5e8d1549faea8bd08"
+abi = "manifests/sepolia/abis/deployments/models/briq_protocol_world_config_world_config.json"
+name = "briq_protocol::world_config::world_config"
+
+[[models.members]]
+name = "config_id"
+type = "u32"
+key = true
+
+[[models.members]]
+name = "treasury"
+type = "ContractAddress"
+key = false
+
+[[models.members]]
+name = "briq"
+type = "ContractAddress"
+key = false
+
+[[models.members]]
+name = "generic_sets"
+type = "ContractAddress"
+key = false
+
+[[models.members]]
+name = "factory"
+type = "ContractAddress"
+key = false
+
+[[models.members]]
+name = "dojo_migration"
+type = "ContractAddress"
+key = false

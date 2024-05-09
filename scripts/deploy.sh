@@ -1,3 +1,24 @@
+# Deployment process for Sepolia
+
+sozo -P sepolia build
+
+sozo -P sepolia migrate plan --world $WORLD_ADDRESS  --name briq_protocol --keystore $STARKNET_KEYSTORE --password $KEYSTORE_PWD
+sozo -P sepolia migrate apply --world $WORLD_ADDRESS  --name briq_protocol --keystore $STARKNET_KEYSTORE --password $KEYSTORE_PWD
+
+# Setup the world config
+sozo -P sepolia execute $SETUP_WORLD_ADDR execute --calldata $WORLD_ADDRESS,$TREASURY_ADDRESS,$BRIQ_TOKEN,$SET_NFT,$FACTORY_ADDR --keystore $STARKNET_KEYSTORE --password $KEYSTORE_PWD
+sozo -P sepolia execute $SETUP_WORLD_ADDR set_dojo_migration_contract --calldata $WORLD_ADDRESS,$MIGRATE_ASSETS_ADDR --keystore $STARKNET_KEYSTORE --password $KEYSTORE_PWD
+
+# Setup the briq factory
+sozo -P sepolia execute $FACTORY_ADDR initialize --calldata 2100000000000000000000000,0,$FEE_TOKEN_ADDR --keystore $STARKNET_KEYSTORE --password $KEYSTORE_PWD
+
+# Authorize my Argent sepolia wallet so I can do the next steps on frontend
+# TODO: use sozo for this, not sure how just yet.
+starkli invoke $WORLD_ADDRESS grant_owner 0x00f0fcC3bAD0943E01990650306343D49264b54c8041D11255427eE788E10f7F 0 --keystore-password $KEYSTORE_PWD
+
+# The rest is done via the frontend admin page.
+
+####################################
 # Source one of the setup scripts.
 
 sozo build

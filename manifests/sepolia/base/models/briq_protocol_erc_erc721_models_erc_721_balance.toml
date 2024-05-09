@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x27efdfea8f2166bd254240cde5d295bf35175879c2b51af696cb9d3e5fdfd01"
+original_class_hash = "0x27efdfea8f2166bd254240cde5d295bf35175879c2b51af696cb9d3e5fdfd01"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_erc_erc721_models_erc_721_balance.json"
+name = "briq_protocol::erc::erc721::models::erc_721_balance"
+
+[[members]]
+name = "token"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "account"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "amount"
+type = "u128"
+key = false

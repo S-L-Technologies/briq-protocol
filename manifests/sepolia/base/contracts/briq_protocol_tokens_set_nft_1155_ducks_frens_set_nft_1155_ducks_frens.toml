@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x708b7e407402e772ea463056139e571cc99a21933342b9617882812d0d8a9d8"
+original_class_hash = "0x708b7e407402e772ea463056139e571cc99a21933342b9617882812d0d8a9d8"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_tokens_set_nft_1155_ducks_frens_set_nft_1155_ducks_frens.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft_1155_ducks_frens::set_nft_1155_ducks_frens"

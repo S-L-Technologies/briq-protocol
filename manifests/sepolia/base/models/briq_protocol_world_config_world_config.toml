@@ -1,0 +1,35 @@
+kind = "DojoModel"
+class_hash = "0x5a18add034770b12f7f3466fd9d464456b134ac9d427de5e8d1549faea8bd08"
+original_class_hash = "0x5a18add034770b12f7f3466fd9d464456b134ac9d427de5e8d1549faea8bd08"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_world_config_world_config.json"
+name = "briq_protocol::world_config::world_config"
+
+[[members]]
+name = "config_id"
+type = "u32"
+key = true
+
+[[members]]
+name = "treasury"
+type = "ContractAddress"
+key = false
+
+[[members]]
+name = "briq"
+type = "ContractAddress"
+key = false
+
+[[members]]
+name = "generic_sets"
+type = "ContractAddress"
+key = false
+
+[[members]]
+name = "factory"
+type = "ContractAddress"
+key = false
+
+[[members]]
+name = "dojo_migration"
+type = "ContractAddress"
+key = false

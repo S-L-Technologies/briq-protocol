@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x5483908098fc731d5384bc05c496683063e620fe181650789dac7aef9666854"
+original_class_hash = "0x5483908098fc731d5384bc05c496683063e620fe181650789dac7aef9666854"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_migrate_migrate_assets.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::migrate::migrate_assets"

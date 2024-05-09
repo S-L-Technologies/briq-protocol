@@ -19,6 +19,9 @@ socials.x = "https://twitter.com/briqNFT"
 
 [[target.dojo]]
 
+
+[profile.sepolia]
+
 # build-external-contracts = [
 #     'presets::erc1155::erc1155::components::erc_1155_balance',
 #     'presets::erc1155::erc1155::components::operator_approval',

@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x5a86d01c1b0173cffe9465bf2d036eff616d8060d6843895aa84be330baf825"
+original_class_hash = "0x5a86d01c1b0173cffe9465bf2d036eff616d8060d6843895aa84be330baf825"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_world_config_set_contracts.json"
+name = "briq_protocol::world_config::set_contracts"
+
+[[members]]
+name = "contract"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "is_active"
+type = "bool"
+key = false

@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x705fc5d2f0dcfe5d3c658e9cbc66d52e225ae8dcd9aad3a1c44712dbd0b66ba"
+original_class_hash = "0x705fc5d2f0dcfe5d3c658e9cbc66d52e225ae8dcd9aad3a1c44712dbd0b66ba"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_booklet_attribute_register_shape_validator.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::booklet::attribute::register_shape_validator"

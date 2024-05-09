@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x39a1595f67bc5409e94cc0b21a1c6969af59190e5ad9b9d1901c47e23e0f4d"
+original_class_hash = "0x39a1595f67bc5409e94cc0b21a1c6969af59190e5ad9b9d1901c47e23e0f4d"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_booklet_attribute_shape_validator.json"
+name = "briq_protocol::booklet::attribute::shape_validator"
+
+[[members]]
+name = "attribute_group_id"
+type = "u64"
+key = true
+
+[[members]]
+name = "attribute_id"
+type = "u64"
+key = true
+
+[[members]]
+name = "class_hash"
+type = "ClassHash"
+key = false

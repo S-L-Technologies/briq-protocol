@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x4bc7728d4aea77dfab05c1a483b6d9c7d2779f1da24f6733afd8c7c66d847a2"
+original_class_hash = "0x4bc7728d4aea77dfab05c1a483b6d9c7d2779f1da24f6733afd8c7c66d847a2"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_tokens_set_nft_sp_set_nft_sp.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::set_nft_sp::set_nft_sp"

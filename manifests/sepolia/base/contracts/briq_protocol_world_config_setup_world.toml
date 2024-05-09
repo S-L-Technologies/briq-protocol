@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0xe360127ada4af73744590183ac661d4876fb9ab444a88669dd0e90bea2e4eb"
+original_class_hash = "0xe360127ada4af73744590183ac661d4876fb9ab444a88669dd0e90bea2e4eb"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_world_config_setup_world.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::world_config::setup_world"

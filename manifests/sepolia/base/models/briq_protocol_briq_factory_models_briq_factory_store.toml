@@ -1,0 +1,30 @@
+kind = "DojoModel"
+class_hash = "0x7e03987449b7dc2b51180cc598cf4b9bad1434ef7eb513ceeb270080d6ce8f1"
+original_class_hash = "0x7e03987449b7dc2b51180cc598cf4b9bad1434ef7eb513ceeb270080d6ce8f1"
+abi = "manifests/sepolia/abis/base/models/briq_protocol_briq_factory_models_briq_factory_store.json"
+name = "briq_protocol::briq_factory::models::briq_factory_store"
+
+[[members]]
+name = "store_id"
+type = "u64"
+key = true
+
+[[members]]
+name = "buy_token"
+type = "ContractAddress"
+key = false
+
+[[members]]
+name = "last_stored_t"
+type = "felt252"
+key = false
+
+[[members]]
+name = "surge_t"
+type = "felt252"
+key = false
+
+[[members]]
+name = "last_purchase_time"
+type = "u64"
+key = false

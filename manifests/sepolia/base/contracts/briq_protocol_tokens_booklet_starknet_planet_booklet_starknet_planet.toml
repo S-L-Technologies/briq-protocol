@@ -1,0 +1,9 @@
+kind = "DojoContract"
+class_hash = "0x3488ae9232354c82b06429f9d72989e3ad4efb15c9de68d063d7b16775223c"
+original_class_hash = "0x3488ae9232354c82b06429f9d72989e3ad4efb15c9de68d063d7b16775223c"
+base_class_hash = "0x0"
+abi = "manifests/sepolia/abis/base/contracts/briq_protocol_tokens_booklet_starknet_planet_booklet_starknet_planet.json"
+reads = []
+writes = []
+computed = []
+name = "briq_protocol::tokens::booklet_starknet_planet::booklet_starknet_planet"
