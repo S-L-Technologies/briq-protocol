@@ -23,7 +23,6 @@ use debug::PrintTrait;
 trait IAttributeHandler<ContractState> {
     fn assign(
         ref self: ContractState,
-        world: IWorldDispatcher,
         set_owner: ContractAddress,
         set_token_id: felt252,
         attribute_group_id: u64,
@@ -33,7 +32,6 @@ trait IAttributeHandler<ContractState> {
     );
     fn remove(
         ref self: ContractState,
-        world: IWorldDispatcher,
         set_owner: ContractAddress,
         set_token_id: felt252,
         attribute_group_id: u64,
@@ -118,7 +116,6 @@ fn inner_attribute_assign(
         },
         AttributeGroupOwner::Contract(contract_address) => {
             IAttributeHandlerDispatcher { contract_address }.assign(
-                world,
                 set_owner,
                 set_token_id,
                 attribute.attribute_group_id,
@@ -187,7 +184,6 @@ fn remove_attribute_inner(
         },
         AttributeGroupOwner::Contract(contract_address) => {
             IAttributeHandlerDispatcher { contract_address }.remove(
-                world,
                 set_owner,
                 set_token_id,
                 attribute.attribute_group_id,

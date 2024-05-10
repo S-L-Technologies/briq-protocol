@@ -159,7 +159,6 @@ impl BookletAttributeHolder<ContractState,
 > of IAttributeHandler<ContractState> {
     fn assign(
         ref self: ContractState,
-        world: IWorldDispatcher,
         set_owner: ContractAddress,
         set_token_id: felt252,
         attribute_group_id: u64,
@@ -167,6 +166,7 @@ impl BookletAttributeHolder<ContractState,
         shape: Array<PackedShapeItem>,
         fts: Array<FTSpec>,
     ) {
+        let world = self.world();
         assert(world.contract_address == self.world().contract_address, 'bad world');
         assert(world.is_set_contract(get_caller_address()), 'Unauthorized');
 
@@ -190,12 +190,12 @@ impl BookletAttributeHolder<ContractState,
 
     fn remove(
         ref self: ContractState,
-        world: IWorldDispatcher,
         set_owner: ContractAddress,
         set_token_id: felt252,
         attribute_group_id: u64,
         attribute_id: u64
     ) {
+        let world = self.world();
         assert(world.contract_address == self.world().contract_address, 'bad world');
         assert(world.is_set_contract(get_caller_address()), 'Unauthorized');
 
